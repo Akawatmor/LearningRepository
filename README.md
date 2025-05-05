@@ -1,7 +1,7 @@
 ## Intro to Cloud Computing 2/2024 Test
 
-* [Chapter 1](#Chapter1)
-1. Create EC2 and Connect via SSH
+* [1. Create EC2 and Connect via SSH](#Chapter1)
+
 2. Create EC2 and Make The Simple Webpage
 3. Create S3 Bucket with Public Permission
 4. Create S3 Bucket with S3 Glacier Policies
