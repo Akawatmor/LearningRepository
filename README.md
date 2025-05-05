@@ -42,8 +42,6 @@ For Example 6609612178 -> 2178
 * คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
 ```uname -a```
 
-https://github.com/user-attachments/assets/fa73deed-a8d6-47a5-9361-8f600896d7dc
-
 <video src="./Video/01.mp4" width="320" height="240" controls></video>
 
 ##
