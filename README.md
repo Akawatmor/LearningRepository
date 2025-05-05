@@ -26,12 +26,12 @@ For Example 6609612178 -> 2178
 * คลิก Launch Instance
 * ตั้งค่าดังนี้:
   Name: ec21234 <br>
-  AMI: เลือก Amazon Linux 2023 \n
-  Instance type: t2.micro \n
-  Key pair: เลือกหรือสร้าง key pair เพื่อใช้ SSH \n
-  Network settings: \n
-    เลือก VPC/Subnet ที่สามารถเข้าถึงอินเทอร์เน็ต \n
-    เลือก Allow SSH from anywhere (0.0.0.0/0) (สำหรับ sandbox เท่านั้น) \n
+  AMI: เลือก Amazon Linux 2023 <br>
+  Instance type: t2.micro <br>
+  Key pair: เลือกหรือสร้าง key pair เพื่อใช้ SSH <br>
+  Network settings: <br>
+    เลือก VPC/Subnet ที่สามารถเข้าถึงอินเทอร์เน็ต <br>
+    เลือก Allow SSH from anywhere (0.0.0.0/0) (สำหรับ sandbox เท่านั้น)
 * คลิก Launch Instance
 * SSH เข้าไปใน instance
 ```ssh -i "your-key.pem" ec2-user@<Public-IP-of-EC2>```
