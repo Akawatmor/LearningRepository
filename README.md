@@ -46,7 +46,7 @@ For Example 6609612178 -> 2178
 
 https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6
 
-##
+<hr>
 <div id="Chapter2"></div>
 2. Create EC2 and Make The Simple Webpage
 
