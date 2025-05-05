@@ -23,9 +23,10 @@ For Example 6609612178 -> 2178
 ### Video Link Reference
 <div id="Chapter1"></div>
 1. Create EC2 and Connect via SSH
-- ไปที่หน้า EC2 Dashboard บน AWS Management Console
-- คลิก Launch Instance
-- ตั้งค่าดังนี้ -> <br>
+
+* ไปที่หน้า EC2 Dashboard บน AWS Management Console
+* คลิก Launch Instance
+* ตั้งค่าดังนี้ -> <br>
   Name: ec21234 <br>
   AMI: เลือก Amazon Linux 2023 <br>
   Instance type: t2.micro <br>
