@@ -23,11 +23,16 @@ For Example 6609612178 -> 2178
 1. Create EC2 and Connect via SSH
 [Video Title](./Video/01.mp4)
 2. Create EC2 and Make The Simple Webpage
-3. Create S3 Bucket with Public Permission
-4. Create S3 Bucket with S3 Glacier Policies
-5. Count the Input Text Using Lambda
-6. Lambda Console Output Trigger S3 via Object Upload
-7. EBS Volume Snapshot
-8. Create and Connect EBS Volume to EC2
-9. RDS Free Tier Create SQL Query
-10. Create Read Replica from RDS Free Tier
+   
+
+https://github.com/user-attachments/assets/8d660343-f945-4455-8685-9ac4ff636026
+
+
+4. Create S3 Bucket with Public Permission
+5. Create S3 Bucket with S3 Glacier Policies
+6. Count the Input Text Using Lambda
+7. Lambda Console Output Trigger S3 via Object Upload
+8. EBS Volume Snapshot
+9. Create and Connect EBS Volume to EC2
+10. RDS Free Tier Create SQL Query
+11. Create Read Replica from RDS Free Tier
