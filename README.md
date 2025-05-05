@@ -228,7 +228,7 @@ https://github.com/user-attachments/assets/8b3459e4-4759-42a7-b8df-feb6c80ed462
 Engine: MySQL <br>
 Template: Free tier <br>
 DB instance identifier: rds1234 <br>
-Master password: (ตามต้องการ)
+Master password: (ตามต้องการ) <br>
 Enable Public access: Yes (เพื่อเชื่อมจาก EC2)
 * หลังสร้างเสร็จ รอจนสถานะ Available (อาจนานหน่อย)
 * SSH เข้า EC2 แล้วติดตั้ง MySQL Client:
@@ -244,7 +244,7 @@ sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql-2022
 -> ติดตั้ง mysql-community-client พร้อม dependencies:
 sudo dnf install -y mysql-community-client
 
--> ❗ หากเกิด GPG check failed อีก ให้ใช้คำสั่งนี้แทน:
+-> (ระวัง) หากเกิด GPG check failed อีก ให้ใช้คำสั่งนี้แทน:
 sudo dnf --nogpgcheck install -y mysql-community-client
 
 -> ตรวจสอบเวอร์ชันเพื่อยืนยันการติดตั้ง:
