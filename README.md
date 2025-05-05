@@ -25,7 +25,7 @@ For Example 6609612178 -> 2178
 * ไปที่หน้า EC2 Dashboard บน AWS Management Console
 * คลิก Launch Instance
 * ตั้งค่าดังนี้:
-  Name: ec21234 \n
+  Name: ec21234 <br>
   AMI: เลือก Amazon Linux 2023 \n
   Instance type: t2.micro \n
   Key pair: เลือกหรือสร้าง key pair เพื่อใช้ SSH \n
