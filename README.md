@@ -71,7 +71,7 @@ systemctl reload httpd
 
 https://github.com/user-attachments/assets/8d660343-f945-4455-8685-9ac4ff636026
 
-##
+<hr>
 <div id="Chapter3"></div>
 3. Create S3 Bucket with Public Permission
 
@@ -89,7 +89,7 @@ ACL เป็น User Managed
 
 https://github.com/user-attachments/assets/313631fc-ab1f-480d-be64-19d30cb4eef8
 
-##
+<hr>
 <div id="Chapter4"></div>
 4. Create S3 Bucket with S3 Glacier Policies
 
@@ -107,7 +107,7 @@ Transition to Glacier after: 30 days <br>
 
 https://github.com/user-attachments/assets/236052ed-a20d-41b7-be13-def227da9542
 
-##
+<hr>
 <div id="Chapter5"></div>
 5. Count the Input Text Using Lambda
 
@@ -138,7 +138,7 @@ Event JSON:<br>
 
 https://github.com/user-attachments/assets/242373f0-6f8e-45ec-851c-cd210cdd9ea0
 
-##
+<hr>
 <div id="Chapter6"></div>
 6. Lambda Console Output Trigger S3 via Object Upload
 
@@ -164,7 +164,7 @@ Enable trigger → Save <br>
 
 https://github.com/user-attachments/assets/31a01e86-cdc7-446f-ae38-48e98f6c7e9d
 
-##
+<hr>
 <div id="Chapter7"></div>
 7. EBS Volume Snapshot
 
@@ -183,7 +183,7 @@ Name: ebs1234 <br>
 
 https://github.com/user-attachments/assets/955f35d6-b872-46ec-a424-928b7c4eae0d
 
-##
+<hr>
 <div id="Chapter8"></div>
 8. Create and Connect EBS Volume to EC2
 
@@ -217,7 +217,7 @@ df -h
 
 https://github.com/user-attachments/assets/8b3459e4-4759-42a7-b8df-feb6c80ed462
 
-##
+<hr>
 <div id="Chapter9"></div>
 9. RDS Free Tier Create SQL Query
 
@@ -260,7 +260,7 @@ SHOW DATABASES;
 
 https://github.com/user-attachments/assets/1ce22dfd-1f10-4652-b15e-69db34e01c9e
 
-##
+<hr>
 <div id="Chapter10"></div>
 10. Create Read Replica from RDS Free Tier
 
