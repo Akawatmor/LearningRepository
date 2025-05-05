@@ -113,22 +113,114 @@ Event JSON:<br>
 https://github.com/user-attachments/assets/242373f0-6f8e-45ec-851c-cd210cdd9ea0
 
 6. Lambda Console Output Trigger S3 via Object Upload
+* ไปที่หน้า S3 Console → เลือกหรือสร้าง bucket ที่ต้องการ (เช่น lambda-trigger-bucket)
+* ไปที่ Lambda Console → Create function
+Name: lambda1234 <br>
+Runtime: Python 3.12<br>
+Permissions: Use existing role → เลือก LabRole<br>
+ใส่โค้ดนี้ใน Lambda Editor: <br>
+```
+def lambda_handler(event, context):
+    for record in event['Records']:
+        print("Uploaded file name:", record['s3']['object']['key'])
+```
+* Deploy แล้วคลิกที่ Configuration → Triggers → Add trigger
+Select S3<br>
+Bucket: lambda-trigger-bucket<br>
+Event type: PUT (Object Created)<br>
+Enable trigger → Save <br>
+* ทดสอบโดยอัปโหลดไฟล์ไปที่ bucket → ดูผลลัพธ์ใน Monitor → Logs (CloudWatch)
 
 https://github.com/user-attachments/assets/31a01e86-cdc7-446f-ae38-48e98f6c7e9d
 
 7. EBS Volume Snapshot
+* ไปที่ EC2 → Volumes
+* เลือก Volume ที่ต้องการสร้าง Snapshot → Actions → Create snapshot
+Name: snap1234<br>
+คลิก Create snapshot
+* หลัง Snapshot เสร็จสมบูรณ์:
+ไปที่ Snapshots → เลือก snap1234 <br>
+Actions → Create volume <br>
+Availability Zone: ตรงกับ EC2 <br>
+Name: ebs1234 <br>
+คลิก Create volume
 
 https://github.com/user-attachments/assets/955f35d6-b872-46ec-a424-928b7c4eae0d
 
 8. Create and Connect EBS Volume to EC2
+* ไปที่ EC2 → Volumes → Create volume
+Size: 1 GiB (หรือมากกว่านั้น)<br>
+Availability Zone: ตรงกับ EC2<br>
+Name: ebs1234<br>
+คลิก Create
+* เชื่อม Volume กับ EC2:
+ไปที่ Volume → Actions → Attach volume<br>
+เลือก instance ที่ต้องการ → Device เช่น /dev/xvdf
+* SSH เข้า EC2 และรันคำสั่ง:
+```
+# ตรวจสอบ device
+lsblk
+
+# สร้าง filesystem
+sudo mkfs -t xfs /dev/xvdf
+
+# สร้าง directory สำหรับ mount
+sudo mkdir /mnt/ebs1234
+
+# mount volume
+sudo mount /dev/xvdf /mnt/ebs1234
+
+# ตรวจสอบ
+df -h
+```
 
 https://github.com/user-attachments/assets/8b3459e4-4759-42a7-b8df-feb6c80ed462
 
 9. RDS Free Tier Create SQL Query
+* ไปที่ RDS Console → Create database
+Engine: MySQL <br>
+Template: Free tier <br>
+DB instance identifier: rds1234 <br>
+Master password: (ตามต้องการ)
+Enable Public access: Yes (เพื่อเชื่อมจาก EC2)
+* หลังสร้างเสร็จ รอจนสถานะ Available (อาจนานหน่อย)
+* SSH เข้า EC2 แล้วติดตั้ง MySQL Client:
+```
+ติดตั้ง MySQL Yum Repository สำหรับ EL9:
+sudo dnf install -y https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+
+นำเข้า GPG Key ของ MySQL (เพื่อยืนยันความถูกต้องของแพ็กเกจ):
+sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql-2022
+
+ติดตั้ง mysql-community-client พร้อม dependencies:
+sudo dnf install -y mysql-community-client
+
+❗ หากเกิด GPG check failed อีก ให้ใช้คำสั่งนี้แทน:
+sudo dnf --nogpgcheck install -y mysql-community-client
+
+ตรวจสอบเวอร์ชันเพื่อยืนยันการติดตั้ง:
+mysql --version
+
+รอ RDS สร้างเสร็จจากนั้นเชื่อมต่อโดยใช้คำสั่ง
+mysql -h <RDS-endpoint> -u <username> -p
+
+สร้างตาราง
+CREATE DATABASE CS1234db;
+
+แสดงตารางที่สร้าง
+SHOW DATABASES;
+→ ควรเห็น CS1234db แสดงอยู่
+```
 
 https://github.com/user-attachments/assets/1ce22dfd-1f10-4652-b15e-69db34e01c9e
 
 10. Create Read Replica from RDS Free Tier
+* ไปที่ RDS Console → เลือก instance rds1234
+* Actions → Create read replica
+Replica identifier: rr1234 <br>
+Enable Multi-AZ: ไม่จำเป็นสำหรับ Sandbox
+* คลิก Create read replica
+* รอให้สถานะของ rr1234 เป็น Available
 
 https://github.com/user-attachments/assets/b6cacfe2-8fb7-4ff8-b5e6-51c2a2c702d7
 
