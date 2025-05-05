@@ -23,7 +23,7 @@ For Example 6609612178 -> 2178
 
 ## Video Link Reference
 
----
+--
 <div id="Chapter1"></div>
 1. Create EC2 and Connect via SSH
 
