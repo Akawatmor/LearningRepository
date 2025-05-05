@@ -44,6 +44,8 @@ For Example 6609612178 -> 2178
 
 https://github.com/user-attachments/assets/fa73deed-a8d6-47a5-9361-8f600896d7dc
 
+<video src="./Video/01.mp4" width="320" height="240" controls></video>
+
 ##
 <div id="Chapter2"></div>
 2. Create EC2 and Make The Simple Webpage
