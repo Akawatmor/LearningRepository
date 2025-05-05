@@ -22,7 +22,7 @@ For Example 6609612178 -> 2178
 and rename the labuser.ppm to vockey.pem
 
 
-## Solution with Instructions and Videos
+# Solution with Instructions and Videos
 
 <div id="Chapter1"></div>
 ## Create EC2 and Connect via SSH
