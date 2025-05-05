@@ -1,16 +1,17 @@
 ## Intro to Cloud Computing 2/2024 Test
 
+### Chapters
 * [1. Create EC2 and Connect via SSH](#Chapter1)
+* [2. Create EC2 and Make The Simple Webpage](#Chapter2)
+* [3. Create S3 Bucket with Public Permission](#Chapter3)
+* [4. Create S3 Bucket with S3 Glacier Policies](#Chapter4)
+* [5. Count the Input Text Using Lambda](#Chapter5)
+* [6. Lambda Console Output Trigger S3 via Object Upload](#Chapter6)
+* [7. EBS Volume Snapshot](#Chapter7)
+* [8. Create and Connect EBS Volume to EC2](#Chapter8)
+* [9. RDS Free Tier Create SQL Query](#Chapter9)
+* [10. Create Read Replica from RDS Free Tier](#Chapter10)
 
-2. Create EC2 and Make The Simple Webpage
-3. Create S3 Bucket with Public Permission
-4. Create S3 Bucket with S3 Glacier Policies
-5. Count the Input Text Using Lambda
-6. Lambda Console Output Trigger S3 via Object Upload
-7. EBS Volume Snapshot
-8. Create and Connect EBS Volume to EC2
-9. RDS Free Tier Create SQL Query
-10. Create Read Replica from RDS Free Tier
 
 Prerequesis
 1. XXXX is the 4 last digits of student id
@@ -20,10 +21,10 @@ For Example 6609612178 -> 2178
 
 
 
-### Video Link Reference
-<div id="Chapter1"></div>
-1. Create EC2 and Connect via SSH
+## Video Link Reference
 
+1. Create EC2 and Connect via SSH
+<div id="Chapter1"></div>
 * ไปที่หน้า EC2 Dashboard บน AWS Management Console
 * คลิก Launch Instance
 * ตั้งค่าดังนี้ -> <br>
