@@ -198,6 +198,7 @@ Name: ebs1234<br>
 ไปที่ Volume → Actions → Attach volume<br>
 เลือก instance ที่ต้องการ → Device เช่น /dev/xvdf
 * SSH เข้า EC2 และรันคำสั่ง:
+
 ```
 # ตรวจสอบ device
 lsblk
