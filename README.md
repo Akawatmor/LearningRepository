@@ -25,6 +25,7 @@ and rename the labuser.ppm to vockey.pem
 # Solution with Instructions and Videos
 
 <div id="Chapter1"></div>
+
 ## Create EC2 and Connect via SSH
 
 * ไปที่หน้า EC2 Dashboard บน AWS Management Console
