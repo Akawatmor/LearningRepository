@@ -42,13 +42,9 @@ For Example 6609612178 -> 2178
 * คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
 ```uname -a```
 
-https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6
-
 <video src="./Video/01.mp4" width="640" height="480" controls>No Video</video>
 
-<a href="[./Video/01.mp4](https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6)" target="_blank">
-  <img src="thumbnail-image.jpg" alt="Video Title" width="480" height="360">
-</a>
+https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6
 
 ##
 <div id="Chapter2"></div>
@@ -71,6 +67,8 @@ systemctl reload httpd
 * หลังจาก EC2 รันเรียบร้อย เข้าเบราว์เซอร์และเปิด:
 ```http://<Public-IP>```
 
+<video src="./Video/02.mp4" width="640" height="480" controls>No Video</video>
+
 https://github.com/user-attachments/assets/8d660343-f945-4455-8685-9ac4ff636026
 
 ##
@@ -87,6 +85,8 @@ ACL เป็น User Managed
 * หลังอัปโหลดเสร็จให้ คลิกไฟล์ → Permissions → Make public
 * Copy Object URL และทดสอบเปิดผ่านเบราว์เซอร์
 
+<video src="./Video/03.mp4" width="640" height="480" controls>No Video</video>
+
 https://github.com/user-attachments/assets/313631fc-ab1f-480d-be64-19d30cb4eef8
 
 ##
@@ -102,6 +102,8 @@ Name: MoveToGlacier <br>
 Scope: Apply to all objects <br>
 Transition to Glacier after: 30 days <br>
 * Save
+
+<video src="./Video/04.mp4" width="640" height="480" controls>No Video</video>
 
 https://github.com/user-attachments/assets/236052ed-a20d-41b7-be13-def227da9542
 
@@ -132,6 +134,8 @@ Event JSON:<br>
 ```
 คลิก Test → Output ควรเป็น 9
 
+<video src="./Video/05.mp4" width="640" height="480" controls>No Video</video>
+
 https://github.com/user-attachments/assets/242373f0-6f8e-45ec-851c-cd210cdd9ea0
 
 ##
@@ -156,6 +160,8 @@ Event type: PUT (Object Created)<br>
 Enable trigger → Save <br>
 * ทดสอบโดยอัปโหลดไฟล์ไปที่ bucket → ดูผลลัพธ์ใน Monitor → Logs (CloudWatch)
 
+<video src="./Video/06.mp4" width="640" height="480" controls>No Video</video>
+
 https://github.com/user-attachments/assets/31a01e86-cdc7-446f-ae38-48e98f6c7e9d
 
 ##
@@ -172,6 +178,8 @@ Actions → Create volume <br>
 Availability Zone: ตรงกับ EC2 <br>
 Name: ebs1234 <br>
 คลิก Create volume
+
+<video src="./Video/06.mp4" width="640" height="480" controls>No Video</video>
 
 https://github.com/user-attachments/assets/955f35d6-b872-46ec-a424-928b7c4eae0d
 
@@ -204,6 +212,8 @@ sudo mount /dev/xvdf /mnt/ebs1234
 # ตรวจสอบ
 df -h
 ```
+
+<video src="./Video/08.mp4" width="640" height="480" controls>No Video</video>
 
 https://github.com/user-attachments/assets/8b3459e4-4759-42a7-b8df-feb6c80ed462
 
@@ -246,6 +256,8 @@ SHOW DATABASES;
 → ควรเห็น CS1234db แสดงอยู่
 ```
 
+<video src="./Video/09.mp4" width="640" height="480" controls>No Video</video>
+
 https://github.com/user-attachments/assets/1ce22dfd-1f10-4652-b15e-69db34e01c9e
 
 ##
@@ -258,6 +270,8 @@ Replica identifier: rr1234 <br>
 Enable Multi-AZ: ไม่จำเป็นสำหรับ Sandbox
 * คลิก Create read replica
 * รอให้สถานะของ rr1234 เป็น Available
+
+<video src="./Video/10.mp4" width="640" height="480" controls>No Video</video>
 
 https://github.com/user-attachments/assets/b6cacfe2-8fb7-4ff8-b5e6-51c2a2c702d7
 
