@@ -200,19 +200,19 @@ Name: ebs1234<br>
 * SSH เข้า EC2 และรันคำสั่ง:
 
 ```
-# ตรวจสอบ device
+-> ตรวจสอบ device
 lsblk
 
-# สร้าง filesystem
+-> สร้าง filesystem
 sudo mkfs -t xfs /dev/xvdf
 
-# สร้าง directory สำหรับ mount
+-> สร้าง directory สำหรับ mount
 sudo mkdir /mnt/ebs1234
 
-# mount volume
+-> mount volume
 sudo mount /dev/xvdf /mnt/ebs1234
 
-# ตรวจสอบ
+-> ตรวจสอบ
 df -h
 ```
 
