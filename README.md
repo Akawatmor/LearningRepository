@@ -165,6 +165,7 @@ Enable trigger → Save <br>
 https://github.com/user-attachments/assets/31a01e86-cdc7-446f-ae38-48e98f6c7e9d
 
 <hr>
+
 <div id="Chapter7"></div>
 7. EBS Volume Snapshot
 
@@ -184,6 +185,7 @@ Name: ebs1234 <br>
 https://github.com/user-attachments/assets/955f35d6-b872-46ec-a424-928b7c4eae0d
 
 <hr>
+
 <div id="Chapter8"></div>
 8. Create and Connect EBS Volume to EC2
 
@@ -218,6 +220,7 @@ df -h
 https://github.com/user-attachments/assets/8b3459e4-4759-42a7-b8df-feb6c80ed462
 
 <hr>
+
 <div id="Chapter9"></div>
 9. RDS Free Tier Create SQL Query
 
@@ -261,6 +264,7 @@ SHOW DATABASES;
 https://github.com/user-attachments/assets/1ce22dfd-1f10-4652-b15e-69db34e01c9e
 
 <hr>
+
 <div id="Chapter10"></div>
 10. Create Read Replica from RDS Free Tier
 
@@ -275,3 +279,6 @@ Enable Multi-AZ: ไม่จำเป็นสำหรับ Sandbox
 
 https://github.com/user-attachments/assets/b6cacfe2-8fb7-4ff8-b5e6-51c2a2c702d7
 
+<hr>
+<hr>
+@2025 By ___ 
