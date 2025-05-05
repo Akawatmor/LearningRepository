@@ -23,8 +23,10 @@ For Example 6609612178 -> 2178
 
 ## Video Link Reference
 
-1. Create EC2 and Connect via SSH
+---
 <div id="Chapter1"></div>
+1. Create EC2 and Connect via SSH
+
 * ไปที่หน้า EC2 Dashboard บน AWS Management Console
 * คลิก Launch Instance
 * ตั้งค่าดังนี้ -> <br>
