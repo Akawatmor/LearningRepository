@@ -21,7 +21,9 @@ For Example 6609612178 -> 2178
 
 ### Video Link Reference
 1. Create EC2 and Connect via SSH
+
 https://github.com/user-attachments/assets/fa73deed-a8d6-47a5-9361-8f600896d7dc
+
 2. Create EC2 and Make The Simple Webpage
 https://github.com/user-attachments/assets/8d660343-f945-4455-8685-9ac4ff636026
 3. Create S3 Bucket with Public Permission
