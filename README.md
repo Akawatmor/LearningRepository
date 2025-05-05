@@ -22,21 +22,21 @@ For Example 6609612178 -> 2178
 ### Video Link Reference
 1. Create EC2 and Connect via SSH
 
-ไปที่หน้า EC2 Dashboard บน AWS Management Console
-คลิก Launch Instance
-ตั้งค่าดังนี้:
-  Name: ec21234
-  AMI: เลือก Amazon Linux 2023
-  Instance type: t2.micro
-  Key pair: เลือกหรือสร้าง key pair เพื่อใช้ SSH
-  Network settings:
-    เลือก VPC/Subnet ที่สามารถเข้าถึงอินเทอร์เน็ต
-    เลือก Allow SSH from anywhere (0.0.0.0/0) (สำหรับ sandbox เท่านั้น)
-คลิก Launch Instance
-SSH เข้าไปใน instance
-`ssh -i "your-key.pem" ec2-user@<Public-IP-of-EC2>`
-คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
-'uname -a'
+* ไปที่หน้า EC2 Dashboard บน AWS Management Console
+* คลิก Launch Instance
+* ตั้งค่าดังนี้:
+  Name: ec21234 \n
+  AMI: เลือก Amazon Linux 2023 \n
+  Instance type: t2.micro \n
+  Key pair: เลือกหรือสร้าง key pair เพื่อใช้ SSH \n
+  Network settings: \n
+    เลือก VPC/Subnet ที่สามารถเข้าถึงอินเทอร์เน็ต \n
+    เลือก Allow SSH from anywhere (0.0.0.0/0) (สำหรับ sandbox เท่านั้น) \n
+* คลิก Launch Instance
+* SSH เข้าไปใน instance
+```ssh -i "your-key.pem" ec2-user@<Public-IP-of-EC2>```
+* คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
+```uname -a```
 
 https://github.com/user-attachments/assets/fa73deed-a8d6-47a5-9361-8f600896d7dc
 
