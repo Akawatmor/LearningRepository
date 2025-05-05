@@ -232,7 +232,9 @@ Master password: (ตามต้องการ)
 Enable Public access: Yes (เพื่อเชื่อมจาก EC2)
 * หลังสร้างเสร็จ รอจนสถานะ Available (อาจนานหน่อย)
 * SSH เข้า EC2 แล้วติดตั้ง MySQL Client:
+  
 ```
+
 -> ติดตั้ง MySQL Yum Repository สำหรับ EL9:
 sudo dnf install -y https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 
@@ -258,6 +260,7 @@ CREATE DATABASE CS232db;
 SHOW DATABASES;
 
 -> ควรเห็น CS232db แสดงอยู่
+
 ```
 
 <video src="./Video/09.mp4" width="640" height="480" controls>No Video</video>
