@@ -18,7 +18,8 @@ Prerequesis
 For Example 6609612178 -> 2178
 2. YYYY is the Unique Student Key
 3. You make sure that you use AWS Sandbox Environment
-
+4. When you need to connect to EC2 Via SSH. Please get the public key from the aws sandbox console
+and rename the labuser.ppm to vockey.pem
 
 
 ## Solution with Instructions and Videos
@@ -47,6 +48,7 @@ For Example 6609612178 -> 2178
 https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6
 
 <hr>
+
 <div id="Chapter2"></div>
 2. Create EC2 and Make The Simple Webpage
 
@@ -72,6 +74,7 @@ systemctl reload httpd
 https://github.com/user-attachments/assets/8d660343-f945-4455-8685-9ac4ff636026
 
 <hr>
+
 <div id="Chapter3"></div>
 3. Create S3 Bucket with Public Permission
 
@@ -108,6 +111,7 @@ Transition to Glacier after: 30 days <br>
 https://github.com/user-attachments/assets/236052ed-a20d-41b7-be13-def227da9542
 
 <hr>
+
 <div id="Chapter5"></div>
 5. Count the Input Text Using Lambda
 
@@ -139,6 +143,7 @@ Event JSON:<br>
 https://github.com/user-attachments/assets/242373f0-6f8e-45ec-851c-cd210cdd9ea0
 
 <hr>
+
 <div id="Chapter6"></div>
 6. Lambda Console Output Trigger S3 via Object Upload
 
