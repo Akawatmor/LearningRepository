@@ -233,30 +233,31 @@ Enable Public access: Yes (เพื่อเชื่อมจาก EC2)
 * หลังสร้างเสร็จ รอจนสถานะ Available (อาจนานหน่อย)
 * SSH เข้า EC2 แล้วติดตั้ง MySQL Client:
 ```
-ติดตั้ง MySQL Yum Repository สำหรับ EL9:
+-> ติดตั้ง MySQL Yum Repository สำหรับ EL9:
 sudo dnf install -y https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 
-นำเข้า GPG Key ของ MySQL (เพื่อยืนยันความถูกต้องของแพ็กเกจ):
+-> นำเข้า GPG Key ของ MySQL (เพื่อยืนยันความถูกต้องของแพ็กเกจ):
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-mysql-2022
 
-ติดตั้ง mysql-community-client พร้อม dependencies:
+-> ติดตั้ง mysql-community-client พร้อม dependencies:
 sudo dnf install -y mysql-community-client
 
-❗ หากเกิด GPG check failed อีก ให้ใช้คำสั่งนี้แทน:
+-> ❗ หากเกิด GPG check failed อีก ให้ใช้คำสั่งนี้แทน:
 sudo dnf --nogpgcheck install -y mysql-community-client
 
-ตรวจสอบเวอร์ชันเพื่อยืนยันการติดตั้ง:
+-> ตรวจสอบเวอร์ชันเพื่อยืนยันการติดตั้ง:
 mysql --version
 
-รอ RDS สร้างเสร็จจากนั้นเชื่อมต่อโดยใช้คำสั่ง
+-> รอ RDS สร้างเสร็จจากนั้นเชื่อมต่อโดยใช้คำสั่ง
 mysql -h <RDS-endpoint> -u <username> -p
 
-สร้างตาราง
-CREATE DATABASE CS1234db;
+-> สร้างตาราง
+CREATE DATABASE CS232db;
 
-แสดงตารางที่สร้าง
+-> แสดงตารางที่สร้าง
 SHOW DATABASES;
-→ ควรเห็น CS1234db แสดงอยู่
+
+-> ควรเห็น CS232db แสดงอยู่
 ```
 
 <video src="./Video/09.mp4" width="640" height="480" controls>No Video</video>
