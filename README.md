@@ -42,7 +42,13 @@ For Example 6609612178 -> 2178
 * คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
 ```uname -a```
 
-<video src="../Video/01.mp4" width="320" height="240" controls>No Video</video>
+https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6
+
+<video src="./Video/01.mp4" width="640" height="480" controls>No Video</video>
+
+<a href="[./Video/01.mp4](https://github.com/user-attachments/assets/ef8b5bda-bfd1-4ea9-8892-1fcf3714c3a6)" target="_blank">
+  <img src="thumbnail-image.jpg" alt="Video Title" width="480" height="360">
+</a>
 
 ##
 <div id="Chapter2"></div>
