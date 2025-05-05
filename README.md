@@ -42,7 +42,7 @@ For Example 6609612178 -> 2178
 * คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
 ```uname -a```
 
-<video src="./Video/01.mp4" width="320" height="240" controls></video>
+<video src="../Video/01.mp4" width="320" height="240" controls>No Video</video>
 
 ##
 <div id="Chapter2"></div>
