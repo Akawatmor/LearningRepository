@@ -34,15 +34,16 @@ For Example 6609612178 -> 2178
   Network settings: <br>
     เลือก VPC/Subnet ที่สามารถเข้าถึงอินเทอร์เน็ต <br>
     เลือก Allow SSH from anywhere (0.0.0.0/0) (สำหรับ sandbox เท่านั้น)
-- คลิก Launch Instance
-- SSH เข้าไปใน instance
+* คลิก Launch Instance
+* SSH เข้าไปใน instance
 ```ssh -i "your-key.pem" ec2-user@<Public-IP-of-EC2>```
-- คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
+* คำสั่ง Linux CLI พื้นฐานที่สามารถรัน
 ```uname -a```
 
 https://github.com/user-attachments/assets/fa73deed-a8d6-47a5-9361-8f600896d7dc
 
 2. Create EC2 and Make The Simple Webpage
+
 * สร้าง EC2 ใหม่ ตั้งตามนี้ -> <br>
 AMI: Amazon Linux 2023<br>
 Instance type: t2.micro<br>
@@ -63,8 +64,8 @@ systemctl reload httpd
 https://github.com/user-attachments/assets/8d660343-f945-4455-8685-9ac4ff636026
 
 3. Create S3 Bucket with Public Permission
-* ไปที่ S3 Console
 
+* ไปที่ S3 Console
 * คลิก Create bucket ตั้งตามนี้ -> <br>
 Bucket name: s31234 <br>
 ยกเลิก Block all public access <br>
@@ -77,6 +78,7 @@ ACL เป็น User Managed
 https://github.com/user-attachments/assets/313631fc-ab1f-480d-be64-19d30cb4eef8
 
 4. Create S3 Bucket with S3 Glacier Policies
+
 * ไปที่ S3 Console → Create bucket
 Name: lambda1234 <br>
 เปิด default settings ทั้งหมด
@@ -90,6 +92,7 @@ Transition to Glacier after: 30 days <br>
 https://github.com/user-attachments/assets/236052ed-a20d-41b7-be13-def227da9542
 
 5. Count the Input Text Using Lambda
+
 * ไปที่ Lambda Console → Create function
 Name: lambda1234 <br>
 Runtime: Python 3.12 <br>
@@ -116,6 +119,7 @@ Event JSON:<br>
 https://github.com/user-attachments/assets/242373f0-6f8e-45ec-851c-cd210cdd9ea0
 
 6. Lambda Console Output Trigger S3 via Object Upload
+
 * ไปที่หน้า S3 Console → เลือกหรือสร้าง bucket ที่ต้องการ (เช่น lambda-trigger-bucket)
 * ไปที่ Lambda Console → Create function
 Name: lambda1234 <br>
@@ -137,6 +141,7 @@ Enable trigger → Save <br>
 https://github.com/user-attachments/assets/31a01e86-cdc7-446f-ae38-48e98f6c7e9d
 
 7. EBS Volume Snapshot
+
 * ไปที่ EC2 → Volumes
 * เลือก Volume ที่ต้องการสร้าง Snapshot → Actions → Create snapshot
 Name: snap1234<br>
@@ -151,6 +156,7 @@ Name: ebs1234 <br>
 https://github.com/user-attachments/assets/955f35d6-b872-46ec-a424-928b7c4eae0d
 
 8. Create and Connect EBS Volume to EC2
+
 * ไปที่ EC2 → Volumes → Create volume
 Size: 1 GiB (หรือมากกว่านั้น)<br>
 Availability Zone: ตรงกับ EC2<br>
@@ -180,6 +186,7 @@ df -h
 https://github.com/user-attachments/assets/8b3459e4-4759-42a7-b8df-feb6c80ed462
 
 9. RDS Free Tier Create SQL Query
+
 * ไปที่ RDS Console → Create database
 Engine: MySQL <br>
 Template: Free tier <br>
@@ -218,6 +225,7 @@ SHOW DATABASES;
 https://github.com/user-attachments/assets/1ce22dfd-1f10-4652-b15e-69db34e01c9e
 
 10. Create Read Replica from RDS Free Tier
+
 * ไปที่ RDS Console → เลือก instance rds1234
 * Actions → Create read replica
 Replica identifier: rr1234 <br>
