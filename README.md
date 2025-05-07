@@ -13,13 +13,13 @@
 * [10. Create Read Replica from RDS Free Tier](#Chapter10)
 
 
-Prerequesis
+### Caution! Please Read First
 1. XXXX is the 4 last digits of student id
 For Example 6609612178 -> 2178
 2. YYYY is the Unique Student Key
 3. You make sure that you use AWS Sandbox Environment
 4. When you need to connect to EC2 Via SSH. Please get the public key from the aws sandbox console
-and rename the labuser.ppm to vockey.pem
+and rename the labuser.pem to vockey.pem
 
 
 ## Solution with Instructions and Videos
@@ -285,3 +285,4 @@ https://github.com/user-attachments/assets/b6cacfe2-8fb7-4ff8-b5e6-51c2a2c702d7
 <hr>
 <hr>
 @2025 By ___ 
+Edited by Akawat
