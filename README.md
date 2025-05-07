@@ -20,6 +20,7 @@ For Example 6609612178 -> 2178
 3. You make sure that you use AWS Sandbox Environment
 4. When you need to connect to EC2 Via SSH. Please get the public key from the aws sandbox console
 and rename the labuser.pem to vockey.pem
+5. จากที่ได้ลอจับเวลามา ข้อที่ 9 และ 10 ใช้เวลาในการทำ(รอ RDS) มากที่สุด แนะนำให้ไปทำข้อนี้ก่อน
 
 
 ## Solution with Instructions and Videos
